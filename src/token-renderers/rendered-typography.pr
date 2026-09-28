@@ -77,3 +77,4 @@ text-transform: lowercase;
 {[ if (context.textCase === "Camel") ]}
 text-transform: capitalize;
 {[/]}
+/* textCase: {{ context.textCase }} */
