@@ -68,3 +68,12 @@ letter-spacing: {[if (context.letterSpacing.unit === "Percent") ]}
 {[ inject "rendered-measure" context context.letterSpacing /]};
 {[/]}
 text-indent: {[ inject "rendered-measure" context context.paragraphIndent /]};
+{[ if context.textCase === "Upper" ]}
+text-transform: uppercase;
+{[/]}
+{[ if context.textCase === "Lower" ]}
+text-transform: lowercase;
+{[/]}
+{[ if context.textCase === "Camel" ]}
+text-transform: capitalize;
+{[/]}
